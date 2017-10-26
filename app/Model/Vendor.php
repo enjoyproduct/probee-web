@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Vendor extends Model
 {
     //
+    protected $table = 'tbl_vendor';
 }
