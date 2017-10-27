@@ -29,7 +29,9 @@
                 <ul class="breadcrumb">
                     <li><a href="{{ URL::to('/admin/faq/') }}"><i class="icon-home2 position-left"></i> FAQ</a></li>
                 </ul>
-
+             <ul class="breadcrumb-elements">
+                <li><a href="{{ URL::to('/admin/faq/add')}}" ><i class="icon-add position-left"></i> Add FAQ</a></li>
+            </ul>
                 <ul class="breadcrumb-elements">
                 </ul>
             </div>

@@ -8,4 +8,5 @@ class Vendor extends Model
 {
     //
     protected $table = 'tbl_vendor';
+    protected $primaryKey = 'vendor_id';
 }

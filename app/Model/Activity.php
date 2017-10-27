@@ -8,4 +8,5 @@ class Activity extends Model
 {
     //
     protected $table = 'tbl_activity';
+    protected $primaryKey = 'activity_id';
 }

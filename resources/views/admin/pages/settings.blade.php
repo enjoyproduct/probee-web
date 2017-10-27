@@ -65,7 +65,7 @@
                         <div class="tab-content">
 
                             <div class="tab-pane active" id="bottom-tab1">
-                                <form class="form-horizontal" action="{{URL::to('/admin/settings/editGeneralSetting')}}" method="post" enctype="multipart/form-data">
+                                <form class="form-horizontal" action="{{URL::to('/admin/setting/'.$setting->admin_id.'/update')}}" method="post" enctype="multipart/form-data">
 
                                     {!! csrf_field() !!}
 

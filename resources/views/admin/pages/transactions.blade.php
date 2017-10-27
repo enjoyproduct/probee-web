@@ -79,12 +79,12 @@
                     @foreach($transactions as $i => $transaction)
                     <tr>
                         <td>{{$i + 1}}</td>
-                        <td>{{$transaction->user_name}}</td>
+                        <td>{{$transaction->fullname}}</td>
                         <td>{{$transaction->studio_name}}</td>
                         <td>{{$transaction->vendor_name}}</td>
                         <td>{{$transaction->amount}}</td>
-                        <td>{{$transaction->currency}}</td>
-                        <td>{{$reservation->date}}</td>
+                        <td>USD</td>
+                        <td>{{$transaction->created_at}}</td>
                        
                     </tr>
                     @endforeach

@@ -125,10 +125,8 @@
                                         <i class="icon-menu9"></i>
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{URL::to('admin/categories/' . $user->id . '/edit')}}">Edit</a></li>
-                                        <li><a href="{{URL::to('admin/categories/' . $user->id . '/active')}}">Active</a></li>
-                                        <li><a href="{{URL::to('admin/categories/' . $user->id . '/inactive')}}" onclick="return confirm('Are you sure that inactive user?')">Inactive</a></li>
-                                        <li><a href="{{URL::to('admin/categories/' . $user->id . '/delete')}}" onclick="return confirm('Are you sure that delete user?')">Delete</a></li>
+                                        <li><a href="{{URL::to('admin/categories/' . $category->category_id . '/edit')}}">Edit</a></li>
+
                                     </ul>
                                 </li>
                             </ul>

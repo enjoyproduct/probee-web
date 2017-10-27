@@ -8,4 +8,5 @@ class City extends Model
 {
     //
     protected $table = 'tbl_city';
+    protected $primaryKey = 'city_id';
 }

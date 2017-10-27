@@ -84,7 +84,7 @@
                         <td>{{$activity->address}}</td>
                         <td>{{$activity->pass}}</td>
                         <td>{{$activity->price}}</td>
-                        <td>{{$activity->difficulty_level}}</td>
+                        <td>{{$activity->difficult_level}}</td>
                         <td>{{$activity->cancellation_deadline}}</td>
                        
                         <td class="text-center">
@@ -96,7 +96,7 @@
 
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li><a href="{{URL::to('admin/activities/' . $activity->activity_id . '/edit')}}">Edit</a></li>
-                                        <li><a href="{{URL::to('admin/activities/' . $activity->activity_id . '/delete')}}" onclick="return confirm('Do you want to delete this activity?')">Delete</a></li>
+                                        <!-- <li><a href="{{URL::to('admin/activities/' . $activity->activity_id . '/delete')}}" onclick="return confirm('Do you want to delete this activity?')">Delete</a></li> -->
                                     </ul>
                                 </li>
                             </ul>

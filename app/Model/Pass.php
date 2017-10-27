@@ -8,4 +8,5 @@ class Pass extends Model
 {
     //
     protected $table = 'tbl_pass';
+    protected $primaryKey = 'pass_id';
 }

@@ -8,4 +8,5 @@ class Studio extends Model
 {
     //
     protected $table = 'tbl_studio';
+    protected $primaryKey = 'studio_id';
 }

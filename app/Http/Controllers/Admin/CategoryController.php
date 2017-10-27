@@ -18,4 +18,17 @@ class CategoryController extends Controller
         $categories = Category::get();
         return View('admin.pages.categories', compact('categories'));
     }
+
+    public function get_category($category_id)
+    {
+        
+        $category = Category::findOrFail($category_id);
+        return View('admin.pages.category-edit', compact('category'));
+    }
+
+    public function update_category($category_id) 
+    {
+        return redirect('admin/categories');
+    }
+
 }

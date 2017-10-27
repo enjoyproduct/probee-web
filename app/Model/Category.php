@@ -8,4 +8,5 @@ class Category extends Model
 {
     //
     protected $table = 'tbl_category';
+    protected $primaryKey = 'category_id';
 }

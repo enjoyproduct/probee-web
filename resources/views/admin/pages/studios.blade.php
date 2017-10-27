@@ -91,9 +91,8 @@
                                     </a>
 
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{URL::to('admin/studios/' . $studio->id . '/edit')}}">Edit</a></li>
-                                        <li><a href="{{URL::to('admin/studios/' . $studio->id . '/active')}}">Active</a></li>
-                                        <li><a href="{{URL::to('admin/studios/' . $user->id . '/delete')}}" onclick="return confirm('Are you sure that to delete studio?')">Delete</a></li>
+                                        <li><a href="{{URL::to('admin/studios/' . $studio->studio_id . '/edit')}}">Edit</a></li>
+                                        
                                     </ul>
                                 </li>
                             </ul>

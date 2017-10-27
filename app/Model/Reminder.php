@@ -8,4 +8,5 @@ class Reminder extends Model
 {
     //
     protected $table = 'tbl_reminder';
+    protected $primaryKey = 'reminder_id';
 }

@@ -80,7 +80,7 @@
                     @foreach($users as $i => $user)
                     <tr>
                         <td>{{$i + 1}}</td>
-                        <td>{{$user->first_name .' '. $user->last_name}}</td>
+                        <td>{{$user->fullname}}</td>
                         <td>{{$user->email}}</td>
                         <td>
                             @if ($user->gender == 0)
@@ -96,7 +96,7 @@
                         @else
                             <td><span class="label label-success">Subscribed</span></td>
                         @endif
-                        @if ($user->status == 'active')
+                        @if ($user->status == '1')
                             <td><span class="label label-success">Active</span></td>
                         @else
                             <td><span class="label label-default">Inactive</span></td>
@@ -110,10 +110,10 @@
                                     </a>
 
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{URL::to('admin/users/' . $user->id . '/edit')}}">Edit</a></li>
-                                        <li><a href="{{URL::to('admin/users/' . $user->id . '/active')}}">Active</a></li>
+                                        <li><a href="{{URL::to('admin/users/' . $user->user_id . '/edit')}}">Edit</a></li>
+                                        <!-- <li><a href="{{URL::to('admin/users/' . $user->id . '/active')}}">Active</a></li>
                                         <li><a href="{{URL::to('admin/users/' . $user->id . '/inactive')}}" onclick="return confirm('Are you sure that inactive user?')">Inactive</a></li>
-                                        <li><a href="{{URL::to('admin/users/' . $user->id . '/delete')}}" onclick="return confirm('Are you sure that delete user?')">Delete</a></li>
+                                        <li><a href="{{URL::to('admin/users/' . $user->id . '/delete')}}" onclick="return confirm('Are you sure that delete user?')">Delete</a></li> -->
                                     </ul>
                                 </li>
                             </ul>

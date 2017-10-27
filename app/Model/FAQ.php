@@ -8,4 +8,5 @@ class FAQ extends Model
 {
     //
     protected $table = 'tbl_faq';
+    protected $primaryKey = 'faq_id';
 }

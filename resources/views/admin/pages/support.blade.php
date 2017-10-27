@@ -86,8 +86,8 @@
                                     </a>
 
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{URL::to('admin/support/' . $support->support_id . '/edit')}}">Edit</a></li>
-                                        <li><a href="{{URL::to('admin/support/' . $support->support_id . '/delete')}}" onclick="return confirm('Do you want to delete this support?')">Delete</a></li>
+                                        <li><a href="{{URL::to('admin/support/' . $support->contact_id . '/edit')}}">Edit</a></li>
+                                        <li><a href="{{URL::to('admin/support/' . $support->contact_id . '/delete')}}" onclick="return confirm('Do you want to delete this support?')">Delete</a></li>
                                     </ul>
                                 </li>
                             </ul>

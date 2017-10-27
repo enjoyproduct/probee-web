@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dribbler</title>
+    <title>ProBee</title>
 
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
@@ -55,7 +55,7 @@
 
                         <div class="text-center">
                             <div class="icon-object border-slate-300 text-slate-300"><i class="icon-reading"></i></div>
-                            <h5 class="content-group">Login to Dribbler <small class="display-block">Your credentials</small></h5>
+                            <h5 class="content-group">Login to ProBee <small class="display-block">Your credentials</small></h5>
                         </div>
 
                         <!-- Error Message -->
@@ -108,7 +108,7 @@
 
                 <!-- Footer -->
                 <div class="footer text-muted text-center">
-                    &copy; 2016. <a href="#">Dribbler.org</a><a href="#" target="_blank"></a>
+                    &copy; 2017. <a href="#">ProBee.com</a><a href="#" target="_blank"></a>
                 </div>
                 <!-- /footer -->
 

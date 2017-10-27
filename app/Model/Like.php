@@ -8,4 +8,5 @@ class Like extends Model
 {
     //
     protected $table = 'tbl_like';
+    protected $primaryKey = 'like_id';
 }

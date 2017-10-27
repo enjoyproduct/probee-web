@@ -72,7 +72,6 @@
                         <th>Address</th>
                         <th>Pass</th>
                         <th>Price</th>
-                        <th>Difficult Level</th>
                         <th>Time slot</th>
                         <th class="text-center">Actions</th>
                     </tr>
@@ -81,13 +80,12 @@
                     @foreach($reservations as $i => $reservation)
                     <tr>
                         <td>{{$i + 1}}</td>
-                        <td>{{$reservation->user_name}}</td>
+                        <td>{{$reservation->fullname}}</td>
                         <td>{{$reservation->studio_name}}</td>
                         <td>{{$reservation->address}}</td>
                         <td>{{$reservation->pass}}</td>
                         <td>{{$reservation->price}}</td>
-                        <td>{{$reservation->difficulty_level}}</td>
-                        <td>{{$reservation->time_slot}}</td>
+                        <td>{{$reservation->date.' '.$reservation->start_time.'-'.$reservation->end_time}}</td>
                        
                         <td class="text-center">
                             <ul class="icons-list">
@@ -97,7 +95,7 @@
                                     </a>
 
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="{{URL::to('admin/reservations/' . $reservation->reservation_id . '/edit')}}">Edit</a></li>
+                                        <!-- <li><a href="{{URL::to('admin/reservations/' . $reservation->reservation_id . '/edit')}}">Edit</a></li> -->
                                         <li><a href="{{URL::to('admin/reservations/' . $reservation->reservation_id . '/cancel')}}" onclick="return confirm('Do you want to cancel this reservation?')">Cancel</a></li>
                                     </ul>
                                 </li>
