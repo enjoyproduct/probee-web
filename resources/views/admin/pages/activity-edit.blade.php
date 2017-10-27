@@ -82,7 +82,7 @@
                     <div class="col-md-8">
                         <div class="panel panel-flat">
                             <div class="panel-body">
-                                <form class="form-horizontal" action="@if (isset($activity)) {{url('/admin/activitys/'.$activity->activity_id.'/update')}} @endif" enctype="multipart/form-data" method="post">
+                                <form class="form-horizontal" action="@if (isset($activity)) {{url('/admin/activities/'.$activity->activity_id.'/update')}} @endif" enctype="multipart/form-data" method="post">
                                     {{csrf_field()}}
 
                                   
