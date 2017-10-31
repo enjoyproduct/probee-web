@@ -68,4 +68,7 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+    public function register() {
+        return redirect('/admin/users');
+    }
 }

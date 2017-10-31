@@ -14,14 +14,18 @@
 Route::get('/', function () {
     return view('auth/login');
 });
-
+Route::get('/register', function() {
+        return view('auth/register');
+    });
 /**
  * Authentication URIs
  */
 Auth::routes();
 Route::group(['namespace' => 'Auth'], function () {
-    Route::get('/login', 'LoginController@login');
-    Route::get('/auth/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+    Route::post('/login', 'LoginController@login');
+    
+    Route::post('/create', 'RegisterController@register');
+    Route::get('/auth/logout', 'LoginController@logout');
     Route::get('/register/verify/{confirmation_code}', 'RegisterController@confirm');
 });
 

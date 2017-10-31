@@ -92,7 +92,7 @@
                                 </div>
 
                                 <div class="col-sm-6 text-right">
-                                    {{--<a href="{{ URL::to('/forgotPassword') }}">Forgot password?</a>--}}
+                                    <a href="{{ URL::to('/forgotPassword') }}">Forgot password?</a>
                                 </div>
                             </div>
                         </div>
@@ -101,10 +101,13 @@
                             <button type="submit" class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 position-right"></i></button>
                         </div>
                         {{--<span class="help-block text-center no-margin">By continuing, you're confirming that you've read our <a href="#">Terms &amp; Conditions</a> and <a href="#">Cookie Policy</a></span>--}}
+                        <div class=" text-center">
+                                    <a href="{{ URL::to('/register') }}">Create an account</a>
+                                </div>
                     </div>
                 </form>
                 <!-- /advanced login -->
-
+                
 
                 <!-- Footer -->
                 <div class="footer text-muted text-center">
